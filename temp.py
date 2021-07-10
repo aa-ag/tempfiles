@@ -14,7 +14,8 @@ def self_destructing_file():
     print(temporary_file.read())
 
     # (ii)
-    temporary_file.write(b'Hello World')
+    input_from_user = input("Enter text: ")
+    temporary_file.write(input_from_user.encode())
 
     # (iii)
     temporary_file.seek(0)
