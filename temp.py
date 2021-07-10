@@ -30,8 +30,8 @@ def self_destructing_file():
     except:
         print("File no longer exists")
 
-    print(tempfile.gettempdir())
-    
+    print(tempfile.tempdir)
+
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     self_destructing_file()
