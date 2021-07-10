@@ -20,12 +20,12 @@ def self_destructing_file():
     # (iii)
     temporary_file.seek(0)
 
-    # (iv)
-    print(temporary_file.read())
+    print(temporary_file.read().decode())
 
-    # (v)
+    # (iv)
     temporary_file.close()
     try:
+        # (v)
         print(temporary_file.read())
     except:
         print("File no longer exists")
